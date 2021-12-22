@@ -1,5 +1,4 @@
-import os,sys,wget
-from time import sleep
+import os,sys,wget,time
 import re
 from bs4 import BeautifulSoup
 import urllib.request
@@ -22,7 +21,7 @@ dhc = "BEM VINDO (A)!"
 for i in list(dhc):
     print(i, end='')
     sys.stdout.flush()
-    sleep(0.1)
+    time.sleep(0.1)
 print ('')
 print ('')
 print ('''
@@ -35,7 +34,7 @@ print ('''
 while True:
     ir = input("quer ir para o menu da ferramenta?  sim/nao: ")
     if ir == "sim":
-        sleep (1)
+        time.sleep (1)
         break
     elif ir == "nao":
         exit ()
@@ -103,7 +102,7 @@ while True:
                 ''')
     elif opcao == "x":
         print ("saindo...")
-        sleep (1)
+        time.sleep (1)
         os.system ("clear")
         exit()
     break
