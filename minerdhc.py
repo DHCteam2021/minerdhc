@@ -16,7 +16,7 @@ print ('''\033[91m
  ===     === === ===  === ======== ===  ===
 
 \033[0;0m''')
-sleep (2)
+time.sleep (1)
 dhc = "BEM VINDO (A)!"
 for i in list(dhc):
     print(i, end='')
