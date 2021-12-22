@@ -3,10 +3,11 @@ from time import sleep
 import re
 from bs4 import BeautifulSoup
 import urllib.request
+from googlesearch import search
 print ("instalando recursos aguarde...")
 os.system ("apt install poppler -y")
 print ("instalando modulos...")
-os.system ("pip install bs4 && pip install wget")
+os.system ("pip install bs4 && pip install wget pip install google")
 os.system ("clear")
 print ('''\033[91m
  :::=======  ::: :::= === :::===== :::==== 
@@ -62,16 +63,7 @@ while True:
         
         obs2: eu tentei colocar a identidade de um agente de browser falso, porem sem sucesso. continuou retornando o codigo de erro 403.
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+    
         ''')
         query = input("pesquisar por dados: ")
         if query == query:
