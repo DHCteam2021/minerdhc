@@ -1,12 +1,10 @@
-import os,sys,wget,time
-import re
+import os,sys,wget,time,requests,re,urllib.request
 from bs4 import BeautifulSoup
-import urllib.request
 from googlesearch import search
 print ("instalando recursos aguarde...")
 os.system ("apt install poppler -y")
 print ("instalando modulos...")
-os.system ("pip install bs4 && pip install wget pip install google")
+os.system ("pip install bs4 && pip install wget && pip install google && pip install requests")
 os.system ("clear")
 print ('''\033[91m
  :::=======  ::: :::= === :::===== :::==== 
@@ -68,7 +66,7 @@ while True:
         if query == query:
             while True:
                 for j in search(query, tld="co.in", num=1,stop=1, pause=2):
-                    print("|1|resultado encontrado!")
+                    print('\033[32m'+'|1|resultado encontrado!'+'\033[0;0m')
                     time.sleep (0.1)
                     print(j)
                     time.sleep (0.1)
